@@ -6,7 +6,7 @@ package com.dicoding.kotlin
     fun main() {
         val text  = "teresa"
         for (char in text){
-            print("$char ")s
+            print("$char ")
         }
     }
 
