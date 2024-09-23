@@ -1,13 +1,23 @@
 package com.dicoding.kotlin
+import com.dicoding.oop.utils.*
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
-    fun main() {
-        val mixArray: Array<Any?> = arrayOfNulls(5)
-        println(mixArray.size)
-        for(i in 0 until mixArray.size){
-            println(mixArray[i])
-        }
+data class DataUser(val name:String, val age:Int){
+    fun intro(){
+        println("$name, $age")
+
     }
+}
+fun main() {
+    val dataUser = DataUser("Teresa", 21)
+    val dataUser2 = DataUser("Teresa", 21)
+    val dataUser3 = DataUser("ikeda", 21)
+    val dataUser4 = dataUser.copy(name="sheng")
 
+
+
+
+  dataUser4.intro()
+    dataUser.intro()
+
+}
